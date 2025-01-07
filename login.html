@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign-Up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    
+    table {
+      border: 16px solid rgb(41,137, 255);
+      width: 50%; 
+      margin: 50px auto; 
+      border-radius: 10px;
+    }
+
+    
+    input, button {
+      width: 100%; 
+      border-radius: 5px; 
+      margin-top: 5px;
+    }
+
+    
+    form {
+      background-color: #f9f9f9;
+      padding: 20px; 
+    }
+
+   
+    .submit {
+      background-color: rgb(41, 137, 255);
+      color: white;
+      border-radius: 5px; 
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    
+    input[type="text"] {
+      border: 1px solid #ddd;
+    }
+
+   
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+   
+    a {
+      color: green;
+      text-decoration: none;
+    }
+
+    
+    a:hover {
+      text-decoration: underline;
+    }
+
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <table border="1" cellpadding="6" cellspacing="0">
+    <tr>
+      <td>
+        <form action="signin.html" method="post">
+          <h1>Login</h1>
+          <h4>Email:</h4>
+          <input type="text" placeholder="Enter email">
+          
+          <h4>Password:</h4>
+          <input type="text" placeholder="Enter password">
+
+          <h4><i class="fa fa-square-o" aria-hidden="true"></i> show Password</h4>
+          <br>
+
+          <button type="submit" class="submit">SIGN IN</button><br>
+          <h1>Forgot <a href="">Username / Password?</a><br></h1>
+          <h1>Don't have an account? <a href="">Sign up</a></h1>
+        </form>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

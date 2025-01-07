@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            background-color: #f0de16;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        input, select, textarea {
+            margin-bottom: 10px;
+            padding: 5px;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+
+        select[size="3"] {
+            width: 100%;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML5 Form Elements Example</h1>
+
+    <fieldset>
+        <legend>Text Box</legend>
+        <label for="textbox">Enter your name:</label>
+        <input type="text" id="textbox" name="textbox" placeholder="Your name" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Radio Buttons</legend>
+        <label>
+            <input type="radio" name="gender" value="male" required> Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female"> Female
+        </label>
+        <label>
+            <input type="radio" name="gender" value="other"> Other
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Check Boxes</legend>
+        <label>
+            <input type="checkbox" name="hobby" value="reading"> Reading
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="sports"> Sports
+        </label>
+        <label>
+            <input type="checkbox" name="hobby" value="traveling"> Traveling
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Scrolled Selection Box</legend>
+        <label for="countries">Choose your country:</label>
+        <select id="countries" name="countries" size="3">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+            <option value="uk">UK</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Option Box</legend>
+        <label for="color">Choose a color:</label>
+        <select id="color" name="color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>TextArea Box</legend>
+        <label for="message">Enter your message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Label</legend>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Your email address">
+    </fieldset>
+
+    <fieldset>
+        <legend>Datalist Example</legend>
+        <label for="browser">Choose your favorite browser:</label>
+        <input type="text" id="browser" name="browser" list="browsers" placeholder="e.g., Chrome">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+            <option value="Opera">
+        </datalist>
+    </fieldset>
+
+</body>
+</html>
